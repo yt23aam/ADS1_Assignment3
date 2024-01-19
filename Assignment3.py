@@ -142,7 +142,7 @@ india_data.plot("Year", ["Population Growth", "fit"])
 plt.title("Population Growth with year(fit)")
 plt.show()
 
-years = np.arange(2020, 2040, 1)
+years = np.arange(2021, 2040, 1)
 predictions = exponential(years, *param)
 confidence_range = err.error_prop(years, exponential, param, covar)
 
